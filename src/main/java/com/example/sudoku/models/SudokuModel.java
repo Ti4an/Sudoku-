@@ -10,7 +10,4 @@ public class SudokuModel {
         this.sudoku[row][col] = value;
     }
 
-    public boolean correctValue() {
-
-    }
 }

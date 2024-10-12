@@ -9,6 +9,7 @@ import java.io.IOException;
 public class main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+        System.out.println("prueba git");
         HomeView.getInstance();
     }
 
