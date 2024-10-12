@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="571.0" style="-fx-background-color: E03E52; -fx-border-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sudoku.controller.GameController">
+   <center>
+      <HBox alignment="CENTER" prefHeight="333.0" prefWidth="498.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER" style="-fx-border-color: B30838; -fx-border-width: 3;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane style="-fx-border-color: B30838; -fx-border-width: 3;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField_00" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_01" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_10" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_11" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_20" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_21" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane style="-fx-border-color: B30838; -fx-border-width: 3;" GridPane.columnIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField_02" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_03" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_13" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_12" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_22" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_23" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane style="-fx-border-color: B30838; -fx-border-width: 3;" GridPane.columnIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField_04" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_05" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_14" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_15" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_24" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_25" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane style="-fx-border-color: B30838; -fx-border-width: 3;" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField_30" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_31" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_40" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_41" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_50" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_51" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane style="-fx-border-color: B30838; -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField_32" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_33" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_42" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_43" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_52" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_53" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane style="-fx-border-color: B30838; -fx-border-width: 3;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField_34" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_35" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_44" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_45" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_54" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_55" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: f79ea9; -fx-border-color: B30838;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Malgun Gothic Bold" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="78.0" prefWidth="598.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logoImageView" fitHeight="60.0" fitWidth="223.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#onHelpButton" prefHeight="25.0" prefWidth="22.0" style="-fx-background-color: E03E52; -fx-border-color: B30838; -fx-border-radius: 30;" text="?" textFill="#b30838">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="TOP_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onXButton" style="-fx-background-color: E03E52;" text="X" textFill="#b30838">
+               <font>
+                  <Font name="Bauhaus 93" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="39.0" left="340.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <VBox alignment="CENTER" prefHeight="330.0" prefWidth="194.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="30.0" />
+         </BorderPane.margin>
+         <children>
+            <ImageView fx:id="logo2ImageView" fitHeight="131.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="-30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="timeLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="84.0" style="-fx-border-color: B30838;" text="Label">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="34.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="reloadButton" mnemonicParsing="false" onAction="#onReloadButton" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: B30838;">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="hintButton" mnemonicParsing="false" onAction="#onHintButton" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: B30838;">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="homeButton" mnemonicParsing="false" onAction="#onHomeButton" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: B30838;">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
