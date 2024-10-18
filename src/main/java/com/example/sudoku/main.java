@@ -5,11 +5,15 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-
+/**
+ * @author Sebastian Bucheli Miranda
+ * @version 1.0
+ * Clase principal que inicia la aplicación Sudoku.
+ * Extiende Application de JavaFX.
+ */
 public class main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        System.out.println("prueba git");
         HomeView.getInstance();
     }
 

@@ -8,7 +8,12 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
-
+/**
+ * @author Sebastian Bucheli Miranda
+ * @version 1.0
+ *
+ * La clase GameView crea y configura la ventana principal del juego de Sudoku.
+ */
 public class GameView extends Stage {
     public GameView() throws IOException {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/com/example/sudoku/game-view.fxml"));
@@ -20,11 +25,15 @@ public class GameView extends Stage {
         this.setScene(scene);
         this.show();
     }
-
+    /**
+     * Devuelve una instancia única de GameView usando el patrón Singleton.
+     */
     public static GameView getInstance() throws IOException {
         return GameView.GameViewHolder.INSTANCE = new GameView();
     }
-
+    /**
+     * Clase estática interna que sostiene la instancia Singleton de GameView.
+     */
     private static class GameViewHolder {
         private static GameView INSTANCE;
     }

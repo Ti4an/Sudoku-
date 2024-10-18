@@ -28,8 +28,8 @@ public class AlertBox {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
         alert.setHeaderText((String)null);
-        alert.setContentText((String)null);
-        Image image = new Image(this.getClass().getResourceAsStream("/com/example/elsoleclipsado/images/help.png"));
+        alert.setContentText(message);
+        Image image = new Image(this.getClass().getResourceAsStream("/com/example/sudoku/img/winner.png"));
         ImageView imageView = new ImageView(image);
         alert.setGraphic(imageView);
         alert.getDialogPane().setPrefSize(400.0, 400.0);

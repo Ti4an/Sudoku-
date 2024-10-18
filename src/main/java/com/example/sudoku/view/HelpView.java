@@ -9,8 +9,17 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
-
+/**
+ * @author Sebastian Bucheli Miranda
+ * @version  1.0
+ *
+ * La clase HelpView crea y configura una ventana que muestra las instrucciones del juego de Sudoku.
+ */
 public class HelpView extends Stage {
+    /**
+     * Constructor de HelpView que carga el archivo FXML con las instrucciones del juego,
+     * configura la ventana y la muestra.
+     */
     public HelpView(Stage owner) throws IOException {
         FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/com/example/sudoku/how-to.fxml"));
         Parent root = (Parent)loader.load();
@@ -28,14 +37,18 @@ public class HelpView extends Stage {
         this.setScene(scene);
         this.showAndWait();
     }
-
+    /**
+     * Devuelve una instancia única de HelpView usando el patrón Singleton.
+     */
     public static HelpView getInstance(Stage owner) throws IOException {
         if (HelpViewHolder.INSTANCE == null || !HelpViewHolder.INSTANCE.isShowing()) {
             HelpViewHolder.INSTANCE = new HelpView(owner);
         }
         return HelpViewHolder.INSTANCE;
     }
-
+    /**
+     * Clase estática interna que sostiene la instancia Singleton de HelpView.
+     */
     private static class HelpViewHolder {
         private static HelpView INSTANCE;
     }
