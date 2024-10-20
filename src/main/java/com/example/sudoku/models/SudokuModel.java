@@ -1,8 +1,7 @@
 package com.example.sudoku.models;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
+
 /**
  * @author Sebastian Bucheli Miranda
  * @version 1.0
@@ -29,23 +28,72 @@ public class SudokuModel {
      * Inicializa la solución predefinida del Sudoku.
      */
     private void initializeSolution() {
-
-        int[][] predefinedSolution = {
-                {1, 2, 3, 4, 5, 6},
-                {4, 5, 6, 1, 2, 3},
-                {2, 3, 1, 6, 4, 5},
-                {5, 6, 4, 3, 1, 2},
-                {3, 1, 2, 5, 6, 4},
-                {6, 4, 5, 2, 3, 1}
-        };
+        solution = new ArrayList<>();
 
         for (int i = 0; i < 6; i++) {
-            ArrayList<Integer> row = new ArrayList<>();
-            for (int j = 0; j < 6; j++) {
-                row.add(predefinedSolution[i][j]);
-            }
-            solution.add(row);
+            solution.add(new ArrayList<>(Collections.nCopies(6, 0)));
         }
+
+        generateSolution(0, 0);
+    }
+
+    /**
+     * Genera una solución completa de Sudoku usando backtracking.
+     */
+    private boolean generateSolution(int row, int col) {
+        if (row == 6) {
+            return true;
+        }
+
+
+        int nextRow = (col == 5) ? row + 1 : row;
+        int nextCol = (col == 5) ? 0 : col + 1;
+
+
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+        Collections.shuffle(numbers);
+
+        for (int num : numbers) {
+            if (canPlaceNumber(row, col, num)) {
+                solution.get(row).set(col, num);
+
+                if (generateSolution(nextRow, nextCol)) {
+                    return true;
+                }
+
+
+                solution.get(row).set(col, 0);
+            }
+        }
+
+        return false;
+    }
+
+    private boolean canPlaceNumber(int row, int col, int num) {
+
+        for (int i = 0; i < 6; i++) {
+            if (solution.get(row).get(i) == num) {
+                return false;
+            }
+        }
+
+        for (int i = 0; i < 6; i++) {
+            if (solution.get(i).get(col) == num) {
+                return false;
+            }
+        }
+
+        int rowBlock = (row / 2) * 2;
+        int colBlock = (col / 3) * 3;
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (solution.get(rowBlock + i).get(colBlock + j) == num) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 
     /**

@@ -316,6 +316,7 @@ public class GameController {
      * Formatea el tiempo en formato HH:mm:ss.
      */
     private String formatTime(LocalTime time) {
+
         return time.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
     }
 
